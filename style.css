@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    background-image:Url('2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #1A1A19;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color:whitesmoke
+}
+
+nav li {
+    display: inline-block;
+    margin:0 50px;
+}
+
+ul a:hover {
+    color: #FF0000;
+}
+
+.logo a{
+    font-size: 1.3em;
+    font-weight: 700;
+    color:#FABC3F;
+    cursor:default;
+}
+
+.menu {
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 600;
+    display: none;
+}
+@media all and (max-width:640px){
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding:10px 0;
+    }
+    nav ul{
+        padding: 0;
+        text-align: center;
+        display: none;
+    }
+    .logo{
+        align-self: self-start;
+        margin: 10px;
+    }
+    .menu{
+        display: block;
+        position:absolute;
+        top:10px;
+        right:15px;
+    }
+    .showmenu{
+        display: block;
+    }
+}
